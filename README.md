@@ -1,0 +1,1 @@
+# NDVI-and-K-Mean-Classification-from-Sentinel-2
