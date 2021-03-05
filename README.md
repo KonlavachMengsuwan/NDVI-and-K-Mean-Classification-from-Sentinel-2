@@ -89,6 +89,7 @@ png('RGB.png', width = 5, height = 4, units = "in", res = 300)
 plotRGB(bodenseeRGB, axes = TRUE, stretch = "lin", main = "Sentinel RGB colour composite")
 dev.off()
 ```
+![](RGB.png)<!-- -->
 
 ## Plot with ggplot2
 ```
@@ -107,6 +108,7 @@ gplot(b[[9]]) +
 
 ggsave("ggBodensee.png", scale = 1.5, dpi = 300) 		    # to save plot
 ```
+![](ggBodensee.png)<!-- -->
 
 ## Facet Plots with ggplot2
 ### Create Stack
@@ -131,12 +133,16 @@ gplot(bodenseeStack) +
 
 ggsave("allbands.png", scale = 1.5, dpi = 300) # to save plot
 ```
+![](allbands.png)<!-- -->
+
 
 ## Quick visualisation by brick and base plot
 ```
 bodenseeBrick = brick('Bondensee-July-2020.tif')
 plot(bodenseeBrick)
 ```
+![](Quickplot-allbands.png)<!-- -->
+
 
 # Calculate NDVI
 ## NDVI Equation:
@@ -171,6 +177,7 @@ png('ndviplot.png', width = 4, height = 4, units = "in", res = 300)
 plot(ndvi, col = rev(terrain.colors(10)), main = 'Sentinel 2, Bodensee-NDVI')
 dev.off()
 ```
+![](ndviplot.png)<!-- -->
 
 ### Distribution the pixel NDVI values in Histogram
 ```
@@ -186,6 +193,7 @@ hist(ndvi,
 axis(side = 1, at = seq(-0.5,1, 0.05), labels = seq(-0.5,1, 0.05))
 dev.off()
 ```
+![](ndvihist.png)<!-- -->
 
 # Masking or Outlier
 ## Mask pixels with NDVI value of less than 0.4 (Less likely to be vegetation)
@@ -201,6 +209,8 @@ png('ndvimask.png', width = 4, height = 4, units = "in", res = 300)
 plot(veg, main = 'Veg cover')
 dev.off()
 ```
+![](ndvimask.png)<!-- -->
+
 
 ### Write raster file and Export
 ```
