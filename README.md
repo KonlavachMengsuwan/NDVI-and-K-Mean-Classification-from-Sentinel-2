@@ -283,3 +283,4 @@ dev.off()
 
 ![](RGB.png)<!-- -->
 ![](kmeans.png)<!-- -->
+![](ndviplot.png)<!-- -->
