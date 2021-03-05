@@ -284,3 +284,20 @@ dev.off()
 ![](RGB.png)<!-- -->
 ![](kmeans.png)<!-- -->
 ![](ndviplot.png)<!-- -->
+
+
+### Zoom RGB, NDVI, kmeans
+```
+e <- drawExtent()
+cropped_RGB <- crop(bodenseeRGB, e)
+cropped_ndvi <- crop(ndvi, e)
+cropped_kmean <- crop(knr, e)
+
+plotRGB(cropped_RGB)
+image(cropped_ndvi)
+image(cropped_kmean)
+```
+
+![](cropped_RGB.png)<!-- -->
+![](cropped_ndvi.png)<!-- -->
+![](cropped_kmean.png)<!-- -->
