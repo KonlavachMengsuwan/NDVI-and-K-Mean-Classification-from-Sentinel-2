@@ -297,7 +297,11 @@ plotRGB(cropped_RGB)
 image(cropped_ndvi)
 image(cropped_kmean)
 ```
-
+##### RGB
 ![](cropped_RGB.png)<!-- -->
+
+##### NDVI
 ![](cropped_ndvi.png)<!-- -->
+
+##### Kmean
 ![](cropped_kmean.png)<!-- -->
